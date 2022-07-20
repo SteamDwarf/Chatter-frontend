@@ -1,0 +1,110 @@
+.input_container {
+    position: relative;
+    width: 100%;
+}
+
+.input {
+    border: 2px solid;
+    outline: none;
+}
+
+.light .input {
+    border-color: #1976d2;
+}
+
+.dark .input {
+    background-color: #2A3C4B;
+    border: none;
+    color: #D9D9D9; 
+}
+
+
+.input.small {
+    padding: 5px;
+    min-width: 80px;
+    font-size: 14px;
+}
+
+.input.medium {
+    padding: 10px;
+    min-width: 100px;
+    font-size: 18px;
+}
+
+.input.large {
+    padding: 15px;
+    min-width: 130px;
+    font-size: 22px;
+}
+
+.input.half {
+    width: 50%;
+}
+
+.input.full {
+    width: 100%;
+}
+
+
+.input.low-smooth.small {
+    border-radius: 2px;
+}
+.input.low-smooth.medium {
+    border-radius: 4px;
+}
+.input.low-smooth.large {
+    border-radius: 8px;
+}
+
+.input.medium-smooth.small {
+    border-radius: 4px
+}
+.input.medium-smooth.medium {
+    border-radius: 8px
+}
+.input.medium-smooth.large {
+    border-radius: 16px
+}
+
+.input.strong-smooth.small {
+    border-radius: 8px
+}
+.input.strong-smooth.medium {
+    border-radius: 16px
+}
+.input.strong-smooth.large {
+    border-radius: 24px
+}
+
+.input_clear-btn {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.dark .input_clear-btn{
+    color:#D9D9D9;
+}
+
+.input:focus + .input_clear-btn {
+    opacity: 1;
+}
+
+.small + .input_clear-btn {
+    right: 1%;
+    top: 7%;
+    font-size: 20px;
+}
+
+.medium + .input_clear-btn {
+    right: 1%;
+    top: 13%;
+    font-size: 25px;
+}
+
+.large + .input_clear-btn {
+    right: 1%;
+    top: 20%;
+    font-size: 30px;
+}
+
