@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Chatter-frontend/static/css/main.84ff0c94.css",
+    "main.js": "/Chatter-frontend/static/js/main.000b7a7d.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/Chatter-frontend/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/Chatter-frontend/index.html",
+    "main.84ff0c94.css.map": "/Chatter-frontend/static/css/main.84ff0c94.css.map",
+    "main.000b7a7d.js.map": "/Chatter-frontend/static/js/main.000b7a7d.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/Chatter-frontend/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84ff0c94.css",
+    "static/js/main.000b7a7d.js"
+  ]
+}
