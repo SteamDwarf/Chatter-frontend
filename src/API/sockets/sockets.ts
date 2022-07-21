@@ -14,10 +14,6 @@ export enum SocketEvents {
 const socketServerURL = 'https://chatter-ds-server.herokuapp.com';
 let socket = io(socketServerURL, {autoConnect: false});
 
-socket.onAny((event, ...args) => {
-    console.log(event, args);
-});
-
 export const connectToServer = (userName: string, color: string) => {
     socket.auth = {userName, color};
     socket.connect();
@@ -85,41 +81,3 @@ export const socketSendPrivateMessage = (data: IMessage) => {
 export const socketGetContactMessages = (userName: string, contactName: string) => {
     socket.emit(SocketEvents.GET_MESSAGES, userName, contactName);
 }
-
-/* export const socketOnConnectError = (setErrorFunc) => {
-    socket.on("connect_error", (error) => {
-        setErrorFunc(error.message);
-    })
-}
-
-export const useSocketOn = (event, callback) => {
-    const [result, setResult] = useState('');
-
-    socket.on(event, () => {
-
-    });
-};
- */
-
-/* export const socketEmit = (action, data) => {
-    socket.emit(action, data);
-}
-
-export const socketJoinRoom = (userName, roomId) => {
-    socket.emit("join_room", userName, roomId);
-}
-
-export const socketLogin = (userName, roomId) => {
-    socket.emit("login", userName);
-    socket.emit("join_room", userName, roomId);
-}
-
-export const socketSendMessage = (messageData) => {
-    socket.emit("send_message", messageData);
-}
-
-export const socketRecieveMessage = (setMessagesFunc) => {
-    socket.on("recieve_message", (message) => {
-        setMessagesFunc((recievedMessages) => [...recievedMessages, message]);
-    })
-} */
